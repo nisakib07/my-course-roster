@@ -4,9 +4,28 @@ import Cart from "../Cart/Cart";
 
 const Home = () => {
   const [cartItems, setCartItems] = useState([]);
+  const [remaining, setRemaining] = useState(20);
+  const [credit, setCredit] = useState(0);
+  const [price, setPrice] = useState(0);
+
   const handleSelect = (card) => {
-    const newCartItems = [...cartItems, card];
-    setCartItems(newCartItems);
+    const exists = cartItems.find((cartItem) => cartItem.id === card.id);
+    if (exists) {
+      alert("No");
+    } else {
+      const totalRemaining = remaining - card.credit_hour;
+      const totalCredit = credit + card.credit_hour;
+      const newTotalPrice = price + card.price;
+      if (totalRemaining < 0 || totalCredit > 20) {
+        alert("Credit Limit Exceeded");
+      } else {
+        setRemaining(totalRemaining);
+        setCredit(totalCredit);
+        setPrice(newTotalPrice);
+        const newCartItems = [...cartItems, card];
+        setCartItems(newCartItems);
+      }
+    }
   };
   return (
     <div>
@@ -15,7 +34,11 @@ const Home = () => {
       </div>
       <div className="flex gap-3">
         <Cards handleSelect={handleSelect}></Cards>
-        <Cart cartItems={cartItems}></Cart>
+        <Cart
+          cartItems={cartItems}
+          remaining={remaining}
+          credit={credit}
+          price={price}></Cart>
       </div>
     </div>
   );
