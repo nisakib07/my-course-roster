@@ -1,39 +1,47 @@
 import { BsCurrencyDollar, BsBook } from "react-icons/bs";
+import PropTypes from "prop-types";
 
-const Card = () => {
+const Card = ({ card, handleSelect }) => {
+  const { img, course_name, course_details, price, credit_hour } = card;
   return (
     <div>
-      <div className="card bg-base-100 shadow-xl p-4">
+      <div className="bg-base-100 h-[450px] shadow-xl p-4 rounded-lg">
         <figure>
-          <img
-            className="w-full"
-            src="../../../src/assets/Rectangle 2-5.png"
-            alt="Shoes"
-          />
+          <img className="w-full" src={img} alt="" />
         </figure>
         <div>
-          <h2 className="my-4 text-lg font-semibold">
-            Introduction to C Programming
-          </h2>
-          <p className="text-[#1c1b1b99] text-sm mb-4">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
-          </p>
-          <div className="flex justify-between">
+          <h2 className="my-4 text-base font-semibold">{course_name}</h2>
+          <p className="text-[#1c1b1b99] text-sm h-[130px]">{course_details}</p>
+          <div className="flex justify-between ">
             <p className="flex items-center gap-3">
-              <BsCurrencyDollar /> Price: 15000
+              <BsCurrencyDollar />
+              <span className="text-[#1c1b1b99] font-medium">
+                Price: {price}
+              </span>
             </p>
             <p className="flex items-center gap-3">
-              <BsBook /> Credit : 1hr
+              <BsBook />
+              <span className="text-[#1c1b1b99] font-medium">
+                Credit : {credit_hour}hr
+              </span>
             </p>
           </div>
-          <button className="bg-[#2F80ED] text-white text-lg font-semibold w-full mt-6 rounded-lg p-2">
-            Select
-          </button>
+          <div className="flex">
+            <button
+              onClick={() => handleSelect(card)}
+              className="bg-[#2F80ED] text-white text-lg font-semibold w-full mt-6 rounded-lg p-2 ">
+              Select
+            </button>
+          </div>
         </div>
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  card: PropTypes.object.isRequired,
+  handleSelect: PropTypes.func.isRequired,
 };
 
 export default Card;
