@@ -1,10 +1,11 @@
 import "./App.css";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <>
-      <h1 className="">Hello</h1>
-    </>
+    <div className="max-w-screen-xl mx-auto">
+      <Home></Home>
+    </div>
   );
 }
 
