@@ -1,8 +1,11 @@
-# React + Vite
+# This project has got various features. Few of them are discussed below:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- ## Showing added courses
 
-Currently, two official plugins are available:
+_If the "Select" button of any course is clicked, the name of the course will be instantly shown_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ## No Duplication
+
+_Once a course is selected, it can not be selected again_
+
+- ##

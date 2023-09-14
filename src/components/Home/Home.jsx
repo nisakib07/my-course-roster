@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Cards from "../Cards/Cards";
 import Cart from "../Cart/Cart";
+import toast, { Toaster } from "react-hot-toast";
 
 const Home = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -11,13 +12,13 @@ const Home = () => {
   const handleSelect = (card) => {
     const exists = cartItems.find((cartItem) => cartItem.id === card.id);
     if (exists) {
-      alert("No");
+      toast.error("This course is already added");
     } else {
       const totalRemaining = remaining - card.credit_hour;
       const totalCredit = credit + card.credit_hour;
       const newTotalPrice = price + card.price;
       if (totalRemaining < 0 || totalCredit > 20) {
-        alert("Credit Limit Exceeded");
+        toast.error("You have exceeded your credit limit");
       } else {
         setRemaining(totalRemaining);
         setCredit(totalCredit);
@@ -39,6 +40,7 @@ const Home = () => {
           remaining={remaining}
           credit={credit}
           price={price}></Cart>
+        <Toaster />
       </div>
     </div>
   );

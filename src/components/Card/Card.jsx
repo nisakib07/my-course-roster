@@ -1,7 +1,7 @@
 import { BsCurrencyDollar, BsBook } from "react-icons/bs";
 import PropTypes from "prop-types";
 
-const Card = ({ card, handleSelect }) => {
+const Card = ({ card, handleSelect, notify }) => {
   const { img, course_name, course_details, price, credit_hour } = card;
   return (
     <div>
@@ -28,7 +28,10 @@ const Card = ({ card, handleSelect }) => {
           </div>
           <div className="flex">
             <button
-              onClick={() => handleSelect(card)}
+              onClick={() => {
+                handleSelect(card);
+                notify();
+              }}
               className="bg-[#2F80ED] text-white text-lg font-semibold w-full mt-6 rounded-lg p-2 ">
               Select
             </button>
@@ -42,6 +45,7 @@ const Card = ({ card, handleSelect }) => {
 Card.propTypes = {
   card: PropTypes.object.isRequired,
   handleSelect: PropTypes.func.isRequired,
+  notify: PropTypes.func.isRequired,
 };
 
 export default Card;
