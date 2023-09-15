@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": "../src/assets/Rectangle 2-2.png",
+    "img": "https://i.ibb.co/8bw17xL/Rectangle-2-2.png",
     "course_name": "Introduction to C Programming",
     "course_details": "C programming is a fundamental language for beginners in web development. It's versatile, used in software, and has a simple syntax. Learn it to enhance your coding skills.",
     "price": 15000,
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "img": "../src/assets/Rectangle 2-3.png",
+    "img": "https://i.ibb.co/x1sKH0Q/Rectangle-2-3.png",
     "course_name": "Introduction to Algorithms",
     "course_details": "Algorithms are precise sets of instructions for solving problems efficiently. They're crucial in various fields, offering systematic problem-solving techniques.",
     "price": 25000,
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "img": "../src/assets/Rectangle 2-4.png",
+    "img": "https://i.ibb.co/M67k1ts/Rectangle-2-4.png",
     "course_name": "Introduction to C++ for DSA",
     "course_details": "C++ is a powerful programming language often used for Data Structures and Algorithms (DSA). Its syntax is robust, making it ideal for efficient DSA implementations and problem-solving.",
     "price": 10000,
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "img": "../src/assets/Rectangle 3.png",
+    "img": "https://i.ibb.co/phKpZGW/Rectangle-3.png",
     "course_name": "Basic Data Structures",
     "course_details": "Basic data structures include arrays, linked lists, stacks, queues, trees, graphs, and hash tables. They organize and store data efficiently, each with specific use cases in programming.",
     "price": 35000,
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "img": "../src/assets/Rectangle 2.png",
+    "img": "https://i.ibb.co/mDyWkZ3/Rectangle-2.png",
     "course_name": "Introduction to OOP Python",
     "course_details": "Object-Oriented Programming (OOP) in Python is a paradigm where code is organized around objects and classes. It promotes reusability, encapsulation, and inheritance, enhancing code structure and maintainability.",
     "price": 19000,
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "img": "../src/assets/Rectangle 2-5.png",
+    "img": "https://i.ibb.co/mCvP0CT/Rectangle-2-5.png",
     "course_name": "Software Engineering",
     "course_details": "Software engineering is a disciplined approach to designing, building, and maintaining software systems. It involves systematic processes, tools, and methodologies to ensure reliable and efficient software development.",
     "price": 23000,
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "img": "../src/assets/Rectangle 3-1.png",
+    "img": "https://i.ibb.co/cFjZqQY/Rectangle-3-1.png",
     "course_name": "AWS, Cloud Computing",
     "course_details": "Amazon Web Services (AWS) is a leading cloud computing platform offering a wide range of scalable services. It enables businesses to deploy, manage, and scale applications in the cloud efficiently.",
     "price": 35000,
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "img": "../src/assets/Rectangle 2-1.png",
+    "img": "https://i.ibb.co/9nFR28Z/Rectangle-2-1.png",
     "course_name": "Database (MySQL)",
     "course_details": "MySQL is an open-source relational database management system. It stores structured data and supports SQL queries. It's widely used in web development for data storage and retrieval.",
     "price": 19000,
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "img": "../src/assets/Rectangle 2-6.png",
+    "img": "https://i.ibb.co/GHbK6m9/Rectangle-2-6.png",
     "course_name": "Problem-Solving Part",
     "course_details": "Problem-solving involves analyzing, defining, and devising solutions for challenges. It's a crucial skill in web development, requiring logical thinking, creativity, and systematic approaches to overcome coding and design issues.",
     "price": 23000,
