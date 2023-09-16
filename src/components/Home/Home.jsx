@@ -18,7 +18,9 @@ const Home = () => {
       const totalCredit = credit + card.credit_hour;
       const newTotalPrice = price + card.price;
       if (totalRemaining < 0 || totalCredit > 20) {
-        toast.error("You have exceeded your credit limit");
+        toast.error(
+          "You don't have enough credits left to acquire this course!"
+        );
       } else {
         setRemaining(totalRemaining);
         setCredit(totalCredit);
